@@ -22,4 +22,10 @@ describe('AppComponent', () => {
 		const app = fixture.componentInstance;
 		expect(app.title).toEqual('aws');
 	});
+
+	it(`should have as description 'Aws Project'`, () => {
+		const fixture = TestBed.createComponent(AppComponent);
+		const app = fixture.componentInstance;
+		expect(app.description).toEqual('Aws Project');
+	});
 });

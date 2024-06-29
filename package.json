@@ -4,11 +4,11 @@
   "license": "MIT",
   "scripts": {
     "nx": "nx",
-    "start": "nx serve",
-    "build": "nx build",
-    "test": "nx test",
-    "lint": "nx lint",
-    "lint:fix": "nx lint --fix",
+    "start": "npx nx run aws:serve --watch=true",
+    "build": "npx nx run aws:build",
+    "test": "npx nx affected --target=test",
+    "lint": "npx nx run aws:lint",
+    "lint:fix": "npx nx run aws:lint --fix",
     "prepare": "husky install"
   },
   "private": true,
