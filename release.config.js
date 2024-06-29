@@ -6,7 +6,6 @@ const config = {
 		[
 			'@semantic-release/git',
 			{
-				assets: ['dist/aws/browser/*.*'],
 				message: 'chore(release): ${nextRelease.version} [skip ci]\n\n${nextRelease.notes}',
 			},
 		],
