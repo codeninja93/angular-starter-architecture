@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
 
@@ -9,12 +9,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
+export class AppComponent {
 	title = 'aws';
 	description = 'Aws Project';
-	constructor() {}
-
-	ngOnInit(): void {
-		
-	}
 }
