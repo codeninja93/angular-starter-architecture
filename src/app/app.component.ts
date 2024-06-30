@@ -11,5 +11,5 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
 	title = 'aws';
-	description = 'Aws Project'
+	description = 'Aws Project';
 }

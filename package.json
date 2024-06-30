@@ -7,7 +7,7 @@
     "start": "npx nx run aws:serve --watch=true",
     "build": "npx nx run aws:build",
     "test": "npx nx affected --target=test",
-    "lint": "npx nx run aws:lint",
+    "lint": "npx nx affected --target=lint",
     "lint:fix": "npx nx run aws:lint --fix",
     "prepare": "husky install"
   },
@@ -36,6 +36,8 @@
     "@angular/cli": "~18.0.0",
     "@angular/compiler-cli": "~18.0.0",
     "@angular/language-service": "~18.0.0",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
     "@nx/eslint": "19.3.2",
     "@nx/eslint-plugin": "19.3.2",
     "@nx/jest": "19.3.2",
@@ -70,5 +72,6 @@
   },
   "nx": {
     "includedScripts": []
-  }
+  },
+  "type": "module"
 }
