@@ -8,7 +8,6 @@
     "build": "npx nx run aws:build",
     "test": "npx nx affected --target=test",
     "lint": "npx nx affected --target=lint",
-    "lint:fix": "npx nx run aws:lint --fix",
     "prepare": "husky install"
   },
   "private": true,
